@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/542f0cbd24.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- header start -->
+<header class="container-fluid">
+  <div class="row headbar" >
+    <div class="col-lg-8 col-md-8 col-sm-12">
+      <i class="fa-brands fa-wordpress" style="font-size: 16px;"></i>
+      <strong>Our free WordPress themes are downloaded over 5 MILLION times.</strong>
+      <a href="https://colorlib.com/wp/themes/" class="web">Get them now!</a>
+    </div>
+    <div class="icons col-lg-4 col-md-2 col-sm-2">
+      <a href="https://twitter.com/colorlib" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.facebook.com/colorlib" title="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/colorlib/" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/colorlib" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.youtube.com/Colorlib" title="Youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://feeds.feedburner.com/colorlib/aWTQ" title="RSS" target="_blank"><i class="fa-sharp fa-solid fa-rss"></i></a>
+      <a href="https://github.com/colorlibhq/" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+</header>
+<!-- header end -->
+<!-- nav start -->
+<nav class="container-fluid " id="nav">
+<!-- searchbox enlg start -->
+   <div id="srhbox" class="col-lg-12 col-md-12">
+    <input type="text" placeholder="Type then hit enter to search…"  >
+    <span onclick="srchEnd()" id="xbtn"><i class="fa-regular fa-x"></i></span>
+  </div>
+<!-- searchbox enlg end -->
+  <div class=" navba" id="navba">
+  <div class="col-lg-12 col-md-12 col-sm-12 navb" id="navb">
+    <div class="col-lg-4 .col-md-2 col-sm-6 left">
+      <a href="https://colorlib.com/wp/">
+        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-logo-top.png" alt="Colorlib"  width="140" height="33.95">
+      </a>
+    </div>
+    <div class="col-lg-8 col-md-10 col-sm-6 right">
+      <ul>
+        <li><a href="https://colorlib.com/wp/">Home</a></li>
+        <li><a href="https://colorlibsupport.com/" target="_blank">Support</a></li>
+        <li><a href="https://colorlib.com/wp/themes/" title="Best Free WordPress Themes">Free Themes</a></li>
+        <li><a href="https://colorlib.com/wp/category/collections/">Premium Themes</a></li>
+        <li><a href="https://colorlib.com/wp/templates/">Website Templates</a></li>
+        <li><a href="https://colorlib.com/wp/">Blog</a></li>
+        <li><a href="https://colorlib.com/checkout/my-account/">Account</a></li>
+        <li><a href="#" class="srch" onclick="srch()"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
+      </ul>
+<!-- 3bars menu on sm-screen start -->
+<div class="offcanvas offcanvas-end b3" id="demo">
+  <div class="offcanvas-body b3menu" >
+    <ul class="list-group list-group-flush" >
+      <li class="list-group-item list-group-item-action"><button type="button" data-bs-dismiss="offcanvas" ><i class="fa-solid fa-x"></i></button></li>
+      <li class="list-group-item list-group-item-action"><a href="https://colorlib.com/wp/about/">About Colorlib</a></li>
+      <li class="list-group-item list-group-item-action"><a title="Advertise on Colorlib" href="https://colorlib.com/wp/advertise/">Advertise</a></li>
+      <li class="list-group-item list-group-item-action"><a title="Free WordPress Themes 2021" href="https://colorlib.com/wp/themes/">WordPress Themes</a></li>
+      <li class="list-group-item list-group-item-action"><a title="HTML website templates" href="https://colorlib.com/wp/templates/">Website Templates</a></li>
+      <li class="list-group-item list-group-item-action"><a title="Free Bootstrap templates" href="https://colorlib.com/wp/cat/bootstrap/">Bootstrap Templates</a></li>
+      <li class="list-group-item list-group-item-action"><a target="_blank" href="https://colorlibsupport.com/">Support Forum</a></li>
+      <li class="list-group-item list-group-item-action"><a href="https://colorlib.com/wp/contact-us/">Contact us</a></li>
+      <li class="list-group-item list-group-item-action"><a href="https://colorlib.com/wp/jobs/">We Are Hiring!</a></li>
+      <li class="list-group-item list-group-item-action">
+        <form method="get" action="https://colorlib.com/wp/" style="display: flex;">
+          <input type="search" name="s" placeholder="Search">
+          <button type="submit" style="font-size:15px ;"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+          </form>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- 3bar btn -->
+<div class="container-fluid mt-3">
+  <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle=".offcanvas-md" data-bs-target="#demo">
+    <i class="fa fa-bars"></i>
+</button>
+</div>
+<!-- 3bars menu on sm-screen end -->
+    </div>
+</div>
+</div>
+</nav>
+<section class="sec1 container-fluid">
+  <div class="row">
+<div class="s1 col-lg-12 col-md-12 col-sm-12">
+  <h4>Real Estate</h4>
+  <p>You have a significant advantage and way more chances to close big deals when building a website with any of our real estate website templates. Selling properties is a competitive business. Only those who execute it strategically witness the success they want to see for themselves. You can swiftly place yourself ahead of your competition with our free tools.</p>
+    
+  <p> With any website template you find below, you can show the world how professional you are and why you are the best in the game. Display your magnificent houses, luxury apartments, and other buildings and have potential clients unable to resist your offerings. Look no further, download the template you prefer, and create a real estate website today. Nothing is holding you back. Take action and make an impression on everyone in need of a new place.
+    <br>
+    <span>
+      <a href="https://colorlib.com/wp/">Home</a>
+      <span> » Real Estate</span>
+    </span>
+  </p>
+</div>
+</div> 
+
+</section>
+
+<div style="height: 1000px;"></div>
+  <!-- Top Navigation Menu -->
+  <!-- <span class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </span>
+    <div id="myLinks">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div> -->
+
+
+    } 
+<!-- nav end-->
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

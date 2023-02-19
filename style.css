@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    color: #26282b;
+    line-height: 1.8em;
+}
+ /* header start  */
+    header{background-color: #1a73e8;
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+    header .headbar{
+        display: flex;
+        color: white;
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: .923em;
+        justify-content: space-between;
+        width: 1015px;
+    }
+    header .headbar strong{
+        font-weight: 700;
+    }
+    header .headbar a{
+        color: white;
+        text-decoration: none;
+        ​cursor:pointer
+    }
+    header .headbar .web:hover{
+        text-decoration: underline;
+    }
+    header .headbar .icons{
+        display: flex;
+        justify-content: space-around;
+        width: 200px;
+        font-size: 17px;
+    }
+/* header end  */
+/* nav start */
+nav{border: 2px solid black;
+    height: 101px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    
+}
+nav .navba{
+    width: fit-content;
+    height: 100%;
+}
+nav .navb{border: 2px solid green;
+        display: flex;
+         /* margin-left: 8px; */
+        align-items: center;
+        width: 995px;
+        justify-content: space-between;
+        height: 100%;
+        }
+nav .navb .left{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+    }
+nav .navb .right{
+    width: fit-content;
+}
+nav .navb .right ul{
+    list-style-type: none;
+    
+}
+nav .navb .right li {
+  float: left;
+}
+nav .navb .right li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  color: rgb(102, 97, 97);
+}
+/* searchbox enlg start  */
+    nav #srhbox{
+        height: 100%;
+        display: none;
+        position: relative;
+        width:995px;
+        margin-left: 20px;
+    }
+
+    nav #srhbox input{
+    width: 980px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(94, 87, 87);
+    height: 100%;
+    border: none;
+    z-index: -3;
+    }
+
+    nav #srhbox #xbtn{
+        background: none;
+        font-size: 18px; 
+        z-index: +3;
+        position: absolute;
+        margin-top: 35px;
+        margin-left: -23px;
+        color: rgb(94, 87, 87);
+        cursor:pointer ;
+    }
+    nav #srhbox input:focus{
+         outline: none; 
+    }
+/* searchbox enlg end */
+/* 3bars menu on sm-screen start */
+    nav .navb .right .b3{
+        transition: right 0.3s ease-in-out 0s; right: 0px;
+        display: none;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        z-index: 999999;
+        max-width: 100%;
+        padding-bottom: 30px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        font-size: 14px;
+        background-color:#222222;
+        width: 350px;
+        scrollbar-width: thin;
+    }
+    nav .navb .right .b3 .b3menu{
+        background-color:#222222;
+        width: 100%;
+        padding: 0;
+        }
+    nav .navb .right .b3 .b3menu li{
+        background-color: #222222;
+        border-bottom:1px solid #616161;
+        padding-left:0 ;
+        margin-left: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        
+    }
+    nav .navb .right .b3 .b3menu li a{
+        color: white;
+        opacity: 0.5;
+        float: left;
+
+    }
+    nav .navb .right .b3 .b3menu li button{
+        color: white; 
+        opacity: 0.5; 
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    nav .navb .right .b3 .b3menu li :hover{
+        opacity: 1;
+    }
+    nav .navb .right .b3 .b3menu li input{
+        border: none;
+        width: 270px;
+        margin-left:13px ;
+        background-color: transparent;
+        color: white;
+        }
+    nav .navb .right .b3 .b3menu li input:focus{
+        outline: none;
+    }
+/* 3bars menu on sm-screen end  */
+@media screen and(max-width: 576px){
+    nav .navb .right ul{
+        display: none;
+    }
+    nav .navb .right .b3{
+        display: block;
+    }
+}
+/* nav end */
+/* sec1 start */
+.sec1{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.sec1 .s1{
+    width: 1000px;
+    
+}
+.sec1 .s1 h4{
+    font-size: 1.615em;
+    line-height: 1.5;
+    color: #222222;
+}
+.sec1 .s1 p{
+    font-size: 1.077em;
+    color:#616161;
+    width: 985px;
+}
+.sec1 .s1 span a{
+    text-decoration: none;
+    color: #757575;
+}
+.sec1 .s1 span a:hover{
+    text-decoration:underline;
+}
+.sec1 .s1 span {
+    color:#9e9e9e;
+}
+/* sec2 end */
